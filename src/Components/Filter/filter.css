@@ -1,0 +1,15 @@
+#formulaire input{
+  background-color: #D3D3D3;
+    margin-right : 10px;
+    border: 0;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    color:#696969
+}
+
+#formulaire input:focus,#formulaire button:focus {
+    outline: none;
+    }

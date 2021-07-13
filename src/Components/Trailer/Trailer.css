@@ -1,0 +1,14 @@
+.trailer{
+    max-width: 1000px;
+    margin:auto;
+    border: gray solid;
+    border-radius: 10px;
+    background-color: #DCDCDC;
+    margin-top: 50px;
+  
+}
+.trailer iframe{
+  border:  gray solid;
+margin: 30px auto;
+border-radius: 10px;
+}

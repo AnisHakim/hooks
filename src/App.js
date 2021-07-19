@@ -50,7 +50,7 @@ function App() {
     setFilteredMovies(movies);
     if (filter !== '') {
       const arr = movies.filter(
-        (movie) => movie.title === filter || movie.rating === filter,
+        (movie) => movie.title.toUpperCase().includes(filter.toUpperCase()) || movie.rating.toUpperCase().includes(filter.toUpperCase()),
       );
       if (arr !== []) setFilteredMovies(arr);
     }
@@ -70,12 +70,12 @@ function App() {
           <button onClick={handleClick}> Add Movie</button>
         </div>
       ) : (
-        <div>
-          {' '}
-          <MovieList movies={filteredMovies} />
-          <button onClick={handleClick}> Add Movie</button>
-        </div>
-      )}
+          <div>
+            {' '}
+            <MovieList movies={filteredMovies} />
+            <button onClick={handleClick}> Add Movie</button>
+          </div>
+        )}
     </div>
   );
 }
